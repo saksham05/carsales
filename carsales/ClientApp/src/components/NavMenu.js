@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
-import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import './NavMenu.css';
+import React, { Component } from 'react'
+import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap'
+import { Link } from 'react-router-dom'
+
+import Logo from './Logo'
+import './NavMenu.css'
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
@@ -25,8 +27,9 @@ export class NavMenu extends Component {
     return (
       <header>
         <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" light>
-          <Container>
-            <NavbarBrand tag={Link} to="/">carsales</NavbarBrand>
+                <Container>
+                    <Logo />
+            <NavbarBrand tag={Link} to="/">CarSales</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
             <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
               <ul className="navbar-nav flex-grow">
@@ -34,10 +37,7 @@ export class NavMenu extends Component {
                   <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
+                  <NavLink tag={Link} className="text-dark" to="/createvehicle">Create Vehicle</NavLink>
                 </NavItem>
               </ul>
             </Collapse>
@@ -47,3 +47,5 @@ export class NavMenu extends Component {
     );
   }
 }
+
+export default NavMenu
