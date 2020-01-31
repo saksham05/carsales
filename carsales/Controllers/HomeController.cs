@@ -1,11 +1,11 @@
 ﻿using System;
-using CarSalesTrial.Data;
-using CarSalesTrial.Providers;
+using carsales.Data;
+using carsales.Providers;
 using Microsoft.AspNetCore.Mvc;
-using CarSalesTrial.Messages.Responses;
+using carsales.Messages.Responses;
 using System.Collections.Generic;
 
-namespace CarSalesTrial.Controllers
+namespace carsales.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]

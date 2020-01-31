@@ -5,11 +5,21 @@ export class CreateVehicle extends Component {
     static displayName = CreateVehicle.name;
 
   constructor(props) {
-    super(props);
+      super(props);
+      this.state = {
+          vehicleType: "",
+          make: "",
+          model: "",
+          engine: "",
+          doors: 0,
+          wheels: 0,
+          bodyType: "",
+          price: 0
+      }
       this.createVehicle = this.createVehicle.bind(this);
   }
     createVehicle() {
-        axios.post("http://localhost:56891/api/home/", {
+        axios.post("http://localhost:64347/api/home/", {
             "vehicleType": "saksham",
             "make": "make",
             "model": "model",
