@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
 import ProductImage from '../components/ProductImage'
 import ProductDetails from '../components/ProductDetails'
@@ -9,12 +9,12 @@ class Product extends Component {
     }
     render() {
         return (
-            <div style={{padding:10, flexGrow: 1}}>
+            <div style={{ padding: 10, flexGrow: 1 }}>
                 <ProductImage />
                 <ProductDetails />
-                <button onClick = {this.buyTheProduct}>Buy</button>
+                <button onClick={this.buyTheProduct}>Buy</button>
             </div>
-        )    
+        )
     }
 }
 
