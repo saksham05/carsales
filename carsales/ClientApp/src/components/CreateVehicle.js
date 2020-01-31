@@ -5,7 +5,17 @@ export class CreateVehicle extends Component {
     static displayName = CreateVehicle.name;
 
   constructor(props) {
-    super(props);
+      super(props);
+      this.state = {
+          vehicleType: "",
+          make: "",
+          model: "",
+          engine: "",
+          doors: 0,
+          wheels: 0,
+          bodyType: "",
+          price: 0
+      }
       this.createVehicle = this.createVehicle.bind(this);
   }
     createVehicle() {
