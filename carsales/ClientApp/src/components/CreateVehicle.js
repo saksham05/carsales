@@ -9,7 +9,7 @@ export class CreateVehicle extends Component {
       this.createVehicle = this.createVehicle.bind(this);
   }
     createVehicle() {
-        axios.post("http://localhost:56891/api/home/", {
+        axios.post("http://localhost:64347/api/home/", {
             "vehicleType": "saksham",
             "make": "make",
             "model": "model",
