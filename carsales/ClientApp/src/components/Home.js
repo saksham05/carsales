@@ -4,16 +4,16 @@ import Product from '../components/Product'
 export class Home extends Component {
   static displayName = Home.name;
 
-  render () {
+  render() {
     return (
-        <main style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-        </main>
+      <main style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+      </main>
     );
   }
 }

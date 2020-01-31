@@ -12,7 +12,7 @@ namespace carsales.Data
         {
             
         }
-        public RegisteredCar(string vehicleType, string make, string model, string engine, int doors, int wheels, string bodyType, long price)
+        public RegisteredCar(string vehicleType, string make, string model, string engine, string doors, string wheels, string bodyType, string price)
         {
             VehicleType = vehicleType;
             Make = make;
@@ -37,16 +37,16 @@ namespace carsales.Data
         public string Engine { get; set; }
 
         [DataMember(Name = "doors")]
-        public int Doors { get; set; }
+        public string Doors { get; set; }
 
         [DataMember(Name = "wheels")]
-        public int Wheels { get; set; }
+        public string Wheels { get; set; }
 
         [DataMember(Name = "bodyType")]
         public string BodyType { get; set; }
 
         [DataMember(Name = "price")]
-        public long Price { get; set; }
+        public string Price { get; set; }
 
     }
 }
